@@ -2,15 +2,35 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>ToDo</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ToDo</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        .circular-button {
+            width: 60px; /* Set width */
+            height: 60px; /* Set height to be the same as width for a circle */
+            background-color: #4CAF50; /* Button color */
+            color: white; /* Text color */
+            border: none; /* Remove default border */
+            border-radius: 50%; /* Makes the button circular */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Pointer cursor on hover */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .circular-button:hover {
+                background-color: #45a049; /* Darker color on hover */
+            }
+    </style>
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
+    Hello world
+    <script src="script.js"></script>
+    <button class="circular-button">+</button>
 </body>
 
 </html>
